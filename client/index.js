@@ -22,7 +22,7 @@ export default (prefix, socketPath, callback) => {
         init();
         
         if (typeof callback === 'function')
-            callback(Salam(prefix, socketPath));
+            callback(Omnes(prefix, socketPath));
     });
 }
 
@@ -33,37 +33,20 @@ function loadSocket(prefix, fn) {
     loadJs(`${prefix}/dist/socket.io.js`, fn);
 }
 
-function Salam(prefix, socketPath) {
-    if (!(this instanceof Salam))
-        return new Salam(prefix, socketPath);
+function Omnes(prefix, socketPath) {
+    if (!(this instanceof Omnes))
+        return new Omnes(prefix, socketPath);
     
     Emitify.call(this);
     this._progress = ProgressProto(prefix, socketPath, this);
 }
 
 function init() {
-    Salam.prototype = Object.create(Emitify.prototype);
+    Omnes.prototype = Object.create(Emitify.prototype);
     
-    Salam.prototype.pack = function(from, to, files) {
-        this._progress.pack(from, to, files);
+    Omnes.prototype.extract = function(from, to) {
+        this._progress.extract(from, to);
     };
-    
-    Salam.prototype.extract = function(from, to, files) {
-        this._progress.extract(from, to, files);
-    };
-    
-    Salam.prototype.abort = function() {
-        this._progress.abort();
-    };
-    
-    Salam.prototype.pause = function() {
-        this._progress.pause();
-    };
-    
-    Salam.prototype.continue   = function() {
-        this._progress.continue();
-    };
-}
 
 function ProgressProto(room, socketPath, omnes) {
     const href = getHost();
@@ -113,14 +96,6 @@ function ProgressProto(room, socketPath, omnes) {
     socket.on('disconnect', () => {
         omnes.emit('disconnect');
     });
-    
-    this.pause = () => {
-        socket.emit('pause');
-    };
-    
-    this.continue = () => {
-        socket.emit('continue');
-    };
     
     this.abort = () => {
         socket.emit('abort');
