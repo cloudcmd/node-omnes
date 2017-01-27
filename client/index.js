@@ -47,6 +47,7 @@ function init() {
     Omnes.prototype.extract = function(from, to) {
         this._progress.extract(from, to);
     };
+}
 
 function ProgressProto(room, socketPath, omnes) {
     const href = getHost();
