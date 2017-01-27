@@ -12,7 +12,7 @@ const isProd = NODE_ENV === 'production';
 
 export default {
     entry: 'client/index.js',
-    moduleName: 'salam',
+    moduleName: 'omnes',
     plugins: [
         commonjs({
             include: [
