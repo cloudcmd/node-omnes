@@ -86,12 +86,12 @@ var omnes = require('omnes/legacy');
 MIT
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/omnes.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/node-omnes.svg?style=flat
+[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/cloudcmd/node-omnes.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/omnes "npm"
-[DependencyStatusURL]:      https://gemnasium.com/coderaiser/node-omnes "Dependency Status"
+[DependencyStatusURL]:      https://gemnasium.com/cloudcmd/node-omnes "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 
-[BuildStatusURL]:           https://travis-ci.org/coderaiser/node-omnes  "Build Status"
-[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/node-omnes/master.svg?style=flat
+[BuildStatusURL]:           https://travis-ci.org/cloudcmd/node-omnes  "Build Status"
+[BuildStatusIMGURL]:        https://img.shields.io/travis/cloudcmd/node-omnes/master.svg?style=flat
 
