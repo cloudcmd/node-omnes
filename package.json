@@ -1,6 +1,6 @@
 {
   "name": "omnes",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "extract zip, gz, tar, tar.gz, tgz archives middleware",
   "main": "server/index.js",
   "scripts": {
