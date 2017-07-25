@@ -11,7 +11,9 @@ const extractor = require('./extractor');
 
 const omnesFn = currify(_omnesFn);
 
-module.exports = (options = {}) => {
+module.exports = (options) => {
+    options = options || {};
+    
     const router = Router();
     const prefix = options.prefix || '/omnes';
     
