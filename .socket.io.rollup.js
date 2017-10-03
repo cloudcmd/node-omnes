@@ -13,9 +13,9 @@ const {NODE_ENV} = process.env;
 const isProd = NODE_ENV === 'production';
 
 export default {
-    entry: 'node_modules/socket.io-client/lib/index.js',
-    exports: 'named',
-    moduleName: 'io',
+    input: 'node_modules/socket.io-client/lib/index.js',
+    exports: 'default',
+    name: 'io',
     plugins: [
         commonjs({
             include: [

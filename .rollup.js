@@ -11,8 +11,8 @@ const {NODE_ENV} = process.env;
 const isProd = NODE_ENV === 'production';
 
 export default {
-    entry: 'client/omnes.js',
-    moduleName: 'omnes',
+    input: 'client/omnes.js',
+    name: 'omnes',
     plugins: [
         commonjs({
             include: [
