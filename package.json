@@ -70,7 +70,7 @@
     "load.js": "^1.1.4",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.2",
-    "redrun": "^5.0.1",
+    "redrun": "^6.0.0",
     "rollup": "^0.56.5",
     "rollup-plugin-babel": "^3.0.1",
     "rollup-plugin-commonjs": "^9.0.0",
