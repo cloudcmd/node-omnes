@@ -1,4 +1,4 @@
-# Omnes [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+# Omnes [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 
 Extract `zip`, `tar`, `gz`, `tar.gz`, `tgz` archives middleware based on [socket.io](http://socket.io "Socket.io") and [inly](https://github.com/coderaiser/node-inly "Inly").
 
@@ -86,10 +86,8 @@ var omnes = require('omnes/legacy');
 MIT
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/omnes.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/cloudcmd/node-omnes.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/omnes "npm"
-[DependencyStatusURL]:      https://gemnasium.com/cloudcmd/node-omnes "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 
 [BuildStatusURL]:           https://travis-ci.org/cloudcmd/node-omnes  "Build Status"
